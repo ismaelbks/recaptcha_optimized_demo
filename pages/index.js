@@ -67,7 +67,7 @@ export default function Home() {
           />
 
           <div className="flex justify-center">
-            {true && <ReCAPTCHA
+            {recaptchaNeeded && <ReCAPTCHA
               sitekey={recaptchaPublicKey}
               onChange={onReCAPTCHAChange}
               theme="dark"
